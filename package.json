@@ -1,21 +1,6 @@
 {
-  "name": "doukaku-node-mocha",
-  "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/TheRed/doukaku-node-mocha.git"
-  },
-  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TheRed/doukaku-node-mocha/issues"
-  },
-  "homepage": "https://github.com/TheRed/doukaku-node-mocha#readme",
   "engines": {
     "node": ">=14.2"
   },
