@@ -1,21 +1,21 @@
-const pluckHoge = (input) => {
-  const hoge = input.split('')
-  return hoge
+const pluckFirstCharacter = (string) => {
+  const [character] = string.split('')
+  return character
 }
 
-const isFuga = (hoge) => {
-  return hoge[0] === '1'
+const isFuga = (character) => {
+  return character === '1'
 }
 
-const isPiyo = (hoge) => {
-  return hoge[0] === '2'
+const isPiyo = (character) => {
+  return character === '2'
 }
 
-const judgeFugaPiyo = (hoge) => {
-  if (isFuga(hoge)) {
+const judgeHogeFugaPiyo = (character) => {
+  if (isFuga(character)) {
     return 'fuga'
   }
-  if (isPiyo(hoge)) {
+  if (isPiyo(character)) {
     return 'piyo'
   }
   return 'hoge'
@@ -23,15 +23,14 @@ const judgeFugaPiyo = (hoge) => {
 
 const main = (...argv) => {
   const input = argv[0]
-  const hoge = pluckHoge(input)
-  const fugaPiyo = judgeFugaPiyo(hoge)
-  return fugaPiyo
+  const character = pluckFirstCharacter(input)
+  return judgeHogeFugaPiyo(character)
 }
 
 module.exports = {
   main,
-  pluckHoge,
+  pluckFirstCharacter,
   isFuga,
   isPiyo,
-  judgeFugaPiyo,
+  judgeHogeFugaPiyo,
 }

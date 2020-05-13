@@ -1,25 +1,25 @@
 require('intelli-espower-loader')
 const { equal, deepStrictEqual } = require('power-assert')
-const { main, pluckHoge, isFuga, isPiyo, judgeFugaPiyo } = require('../src')
+const { main, pluckFirstCharacter, isFuga, isPiyo, judgeHogeFugaPiyo } = require('../src')
 
 describe('Unit test', () => {
   it('hoge抽出', () => {
-    deepStrictEqual(pluckHoge('123'), ['1', '2', '3'])
+    deepStrictEqual(pluckFirstCharacter('123'), '1')
   })
   it('fuga判定', () => {
     deepStrictEqual(isFuga('1'), true)
-    deepStrictEqual(isFuga(pluckHoge('123')), true)
-    deepStrictEqual(isFuga(pluckHoge('234')), false)
+    deepStrictEqual(isFuga(pluckFirstCharacter('123')), true)
+    deepStrictEqual(isFuga(pluckFirstCharacter('234')), false)
   })
   it('piyo判定', () => {
     deepStrictEqual(isPiyo('2'), true)
-    deepStrictEqual(isPiyo(pluckHoge('123')), false)
-    deepStrictEqual(isPiyo(pluckHoge('234')), true)
+    deepStrictEqual(isPiyo(pluckFirstCharacter('123')), false)
+    deepStrictEqual(isPiyo(pluckFirstCharacter('234')), true)
   })
   it('hoge fuga piyo判定', () => {
-    deepStrictEqual(judgeFugaPiyo(pluckHoge('345')), 'hoge')
-    deepStrictEqual(judgeFugaPiyo(pluckHoge('123')), 'fuga')
-    deepStrictEqual(judgeFugaPiyo(pluckHoge('234')), 'piyo')
+    deepStrictEqual(judgeHogeFugaPiyo(pluckFirstCharacter('345')), 'hoge')
+    deepStrictEqual(judgeHogeFugaPiyo(pluckFirstCharacter('123')), 'fuga')
+    deepStrictEqual(judgeHogeFugaPiyo(pluckFirstCharacter('234')), 'piyo')
   })
 })
 
