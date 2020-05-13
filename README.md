@@ -1,4 +1,4 @@
-# doukaku-node-mocha
+# doukaku-template-node-mocha
 
 「オフラインリアルタイムどう書く」を Node.js & Mocha & power-assert 使って TDD で解くための環境です。
 
