@@ -14,16 +14,7 @@ it('piyo判定', () => {
   assert.deepStrictEqual(doukaku.isPiyo(doukaku.pluckHoge('234')), true)
 })
 it('hoge fuga piyo判定', () => {
-  assert.deepStrictEqual(
-    doukaku.judgeFugaPiyo(doukaku.pluckHoge('345')),
-    'hoge'
-  )
-  assert.deepStrictEqual(
-    doukaku.judgeFugaPiyo(doukaku.pluckHoge('123')),
-    'fuga'
-  )
-  assert.deepStrictEqual(
-    doukaku.judgeFugaPiyo(doukaku.pluckHoge('234')),
-    'piyo'
-  )
+  assert.deepStrictEqual(doukaku.judgeFugaPiyo(doukaku.pluckHoge('345')), 'hoge')
+  assert.deepStrictEqual(doukaku.judgeFugaPiyo(doukaku.pluckHoge('123')), 'fuga')
+  assert.deepStrictEqual(doukaku.judgeFugaPiyo(doukaku.pluckHoge('234')), 'piyo')
 })
