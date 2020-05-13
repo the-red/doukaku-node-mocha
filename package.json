@@ -1,5 +1,6 @@
 {
-  "main": "index.js",
+  "main": "src/",
+  "bin": "cli.js",
   "scripts": {
     "test": "mocha",
     "format": "prettier --write \"{lib,test}/**/*.{js,json}\" \"*.{js,json}\"",

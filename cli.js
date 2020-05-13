@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const doukaku = require('./lib/doukaku')
+const { main } = require('./src')
 const argv = process.argv.slice(2)
-const result = doukaku.main(...argv)
+const result = main(...argv)
 console.log(result)
