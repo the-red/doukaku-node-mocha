@@ -1,5 +1,10 @@
 {
   "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "format": "prettier --write \"{lib,test}/**/*.{js,json}\" \"*.{js,json}\"",
+    "lint": "eslint --fix \"{lib,test}/**/*.js\" \"*.js\""
+  },
   "license": "MIT",
   "engines": {
     "node": ">=14.2"
