@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/TheRed/doukaku-node-mocha#readme",
   "engines": {
-    "node": ">=10.6"
+    "node": ">=14.2"
   },
   "directories": {
     "test": "test/"
